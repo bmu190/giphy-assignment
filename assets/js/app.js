@@ -24,19 +24,10 @@ $(document).ready(function () {
 		autos.push(vehicle);
 		gifButtons();
 		return false;
-	});
-
-	// $('#addButton').on('submit', function () {
 		
-			$("#addButton").on('submit', function (event) {
+	}); // Need help here. Why does this on worK IF i ADD "gifButtons();" again
 
-			var vehicle = $('input').val().trim();
-			autos.push(vehicle);
-			return false;
-		});
-
-		gifButtons();
-
+	gifButtons();
 		// The next section performs the search and returns the GIFs
 
 		$(document).on('click', '.vehicle', function () {
